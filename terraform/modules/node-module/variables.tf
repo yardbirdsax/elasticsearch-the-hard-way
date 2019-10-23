@@ -7,6 +7,9 @@ variable "instanceName" {
 variable "nodeCount" {
     type = number
 }
+variable "nodeSize" {
+    type = string
+}
 variable "subnetId" {
     type = string
 }

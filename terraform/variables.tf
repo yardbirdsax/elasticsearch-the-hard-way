@@ -1,12 +1,16 @@
 variable "cidrBlock" {
-  type = "string"
+  type = string
 }
 
 variable "sshPubKeyFilePath" {
-  type = "string"
+  type = string
 }
 
 variable "nodeCount" {
   type = number
   default = 1
+}
+
+variable "nodeSize" {
+  type = string
 }

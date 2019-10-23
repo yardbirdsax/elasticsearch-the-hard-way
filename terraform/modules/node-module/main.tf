@@ -13,7 +13,7 @@ EOF
 resource aws_instance "instance" {
   
   ami = var.amiId
-  instance_type = "t2.small"
+  instance_type = var.nodeSize
   tags = {
     Name = "${var.instanceName}-${count.index}"
   }

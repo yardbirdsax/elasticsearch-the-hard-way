@@ -78,6 +78,7 @@ module "masterNode" {
   subnetId = aws_subnet.es-labSubnet.id
   securityGroupId = aws_security_group.es-labSG.id
   keyName = aws_key_pair.es-labKeyPair.key_name
+  nodeSize = var.nodeSize
 }
 
 resource aws_route_table "es-labRouteTable" {
